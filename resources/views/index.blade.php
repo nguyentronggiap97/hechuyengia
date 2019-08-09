@@ -247,3 +247,12 @@
         </div>
 
 @endsection
+
+
+@section('mere.scrip')
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.selectpicker').selectpicker();              
+        });
+    </script>
+@endsection
