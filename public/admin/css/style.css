@@ -19,6 +19,14 @@ a{text-decoration:none;}
     padding: 40px;
 }
 
+option{
+    padding: 5px 2px;
+}
+
+.modal .form-control{
+    margin: 10px auto;
+}
+
 .ahihi .data-in .box-data{
     height: 300px;
     width: 100%;
@@ -34,11 +42,12 @@ a{text-decoration:none;}
 
 .ahihi .data-in .box-data ul li{
     width: 100%;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .ahihi .data-in .box-data ul .left{
     float: left;
+    width: 60%;
 }
 
 .ahihi .data-in .box-data ul .right{

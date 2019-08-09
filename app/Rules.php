@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rules extends Model
 {
-    //
+    protected $table = 'rules';
+
+    protected $fillable = [];    
+
+    public $timestamps = true;
+
+
 }

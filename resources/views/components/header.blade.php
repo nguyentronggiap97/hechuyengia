@@ -19,7 +19,9 @@
 <link rel="stylesheet" type="text/css" href="{{asset('admin/css/font-awesome.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('admin/css/jquery.fancybox.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('admin/css/jquery-ui.css')}}">
+{{-- <link rel="stylesheet" type="text/css" href="{{asset('admin/css/bootstrap-select.css')}}"> --}}
 <link rel="stylesheet" type="text/css" href="{{asset('admin/css/style.css')}}">
+
 
 
 {{-- <title>@php echo isset($title) ? $title : 'Hệ thống quản lý nội dung' @endphp</title> --}}

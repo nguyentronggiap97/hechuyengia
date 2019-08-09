@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Rules;
+use Illuminate\Http\Response;
+use App\Rules;
 
 class rulesController extends Controller
 {
@@ -14,8 +15,13 @@ class rulesController extends Controller
      */
     public function index()
     {
-        // dd("1");
-        return view('index');
+        $data1 = Rules::where('parent', '0')->get();
+        $data2 = Rules::where('parent', '1')->get();
+        // dd($data1);
+        return view('index',[
+            'data1' => $data1,
+            'data2' => $data2
+        ]);
     }
 
     /**
@@ -59,6 +65,26 @@ class rulesController extends Controller
     public function edit($id)
     {
         //
+    }
+
+    public function addone(Request $request)
+    {
+        $rules = new Rules();
+        $rules->title = $request->title;
+        $rules->parent = 0;
+        $rules->save();
+        return Response("success",$rules->toArray());
+    }
+    
+    public function addtwo(Request $request)
+    {
+        // dd($request->all());
+        $rules = new Rules();
+        $rules->title = $request->title;
+        $rules->hypothesis =json_encode($request->arr);
+        $rules->parent = 1;
+        $rules->save();
+        return Response::success('success',$rules);
     }
 
     /**
