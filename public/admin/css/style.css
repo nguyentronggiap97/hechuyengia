@@ -27,6 +27,10 @@ option{
     margin: 10px auto;
 }
 
+select.form-control{
+    height: 200px;
+}
+
 .ahihi .data-in .box-data{
     height: 300px;
     width: 100%;
@@ -65,4 +69,36 @@ option{
 .select-add,
 .select-process{
     margin-bottom: 15px;
+}
+
+#modal-alert .left{
+    width: 50%;
+    float: left;
+    /* text-align: center; */
+}
+
+#modal-alert .right{
+    float: right;
+    width: 40%;
+}
+
+#modal-alert .left span,
+#modal-alert .right span{
+    width: 100%;
+    text-align: left;
+}
+
+#modal-alert .left ul,
+#modal-alert .right ul{
+    widows: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 5px;
+}
+
+#modal-alert .message{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 25px;
+    display: block;
 }
